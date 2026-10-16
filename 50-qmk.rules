@@ -91,6 +91,13 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="2e3c", ATTRS{idProduct}=="df11", ENV{ID_QMK
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="0003", ENV{ID_QMK}="1"
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="2e8a", ATTRS{idProduct}=="000f", ENV{ID_QMK}="1"
 
+# SN32 DFU
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="7010", ENV{ID_QMK}="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="7040", ENV{ID_QMK}="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="7900", ENV{ID_QMK}="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="7140", ENV{ID_QMK}="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0c45", ATTRS{idProduct}=="7160", ENV{ID_QMK}="1"
+
 # Query HID descriptors to determine QMK-specific hidraw devices
 SUBSYSTEM=="hidraw", KERNEL=="hidraw*", IMPORT{program}="qmk_id %S%p"
 
