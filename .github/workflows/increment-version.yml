@@ -47,4 +47,4 @@ jobs:
       - name: Trigger Release Action
         run: ./trigger_action
         env:
-          QMK_BOT_TOKEN: ${{ secrets.QMK_BOT_TOKEN }}
+          QMK_BOT_TOKEN: ${{ secrets.SONIXQMK_BOT_TOKEN }}
